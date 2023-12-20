@@ -35,9 +35,9 @@
             </div>
             <button type="button"
                 class="position-absolute top-0 start-0 translate-middle btn btn-sm rounded-pill" id="navigationBar">
-                <p>1</p></button>
+                <a class="text-decoration-none text-reset" href="./index.html">1</a></button>
             <button type="button"
-                class="position-absolute top-0 start-50 translate-middle btn btn-sm rounded-pill" id="navigationBar">2</button>
+                class="position-absolute top-0 start-50 translate-middle btn btn-sm rounded-pill" id="navigationBar"><a class="text-decoration-none text-reset" href="./bussinesform.html">2</a></button>
             <button type="button"
                 class="position-absolute top-0 start-100 translate-middle btn btn-sm rounded-pill" id="navigationBar" style="border-color: black;">3</button>
         </div>
@@ -45,7 +45,7 @@
 
     
 
-    <form class="detailsForm row g-3">
+    <form class="detailsForm row g-3" action="./detailsSubmit.html" id="detailsForm">
         <div class="col-md-6">
             <label for="inputEmail4" class="form-label">Ettevõtte Email</label>
             <input type="email" class="form-control" id="inputEmail4">
@@ -56,11 +56,11 @@
         </div>
         <div class="col-md-6">
             <label for="inputAddress" class="form-label">Address</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            <input type="text" class="form-control" id="inputAddress" placeholder="Tänav">
         </div>
         <div class="col-md-6">
             <label for="inputAddress2" class="form-label">Address 2</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Korter">
         </div>
         <div class="col-md-4">
             <label for="inputCity" class="form-label">Linn</label>
@@ -105,6 +105,7 @@
             // Set the form values in the HTML
             document.getElementById('formValues').innerHTML = `
                 <p><b>Tellitud domeen:</b>  ${domeeniName}</strong></p>
+                <select hidden name="domeeniNama"><option>${domeeniName}<strong></strong><option></select>
                 
             `;
         </script>

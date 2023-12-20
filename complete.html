@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
     <script src="script.js"></script>
+    
     <svg xmlns='http://www.w3.org/2000/svg'  class="background">
         <circle cx="8%" cy="15%" r="30%" stroke="rgba(89, 222, 26, 0.35)" style="fill:#EBF1F1; stroke-width: 1%;" >
         </circle>
@@ -40,45 +41,22 @@
             <button type="button"
                 class="position-absolute top-0 start-50 translate-middle btn btn-sm rounded-pill" id="navigationBar"><a class="text-decoration-none text-reset" href="./form.html">2</a></button>
             <button type="button"
-                class="position-absolute top-0 start-100 translate-middle btn btn-sm rounded-pill" id="navigationBar"><a class="text-decoration-none text-reset" href="./detailsSubmit.html">3</a></button>
+                class="position-absolute top-0 start-100 translate-middle btn btn-sm rounded-pill" id="navigationBar"><a class="text-decoration-none text-reset" href="./complete.html">3</a></button>
         </div>
     </div>
-    <div class="position-absolute border border-2 border-dark rounded p-2" style="background-color: #DFF1D7;  width: 20%; top: 40%; left: 63%; height: auto; transform: translate(-50%, -50%);">
-        <h2>Arve saaja:</h2>
-        <p>Android OÜ, <br>
-            info@androidou.ee, <br>
-            Gonsiori tn 20-23, Tallinn, 10128,<br>
-            Harjumaa, Eesti. <br>
-            </p>
-    </div>
-    <form class="detailsForm row g-3" style="top: 40%;" action="./complete.html" id="detailsForm">
-        
-        <div id="formValues" class="position-absolute border border-2 border-dark rounded p-2" style="background-color: #DFF1D7;  width: 50%; top: 0%; left: 20%; height: auto; transform: translate(-50%, -50%); height: 170px;"></div>
-        
-        <script>
-            // Get the query parameters from the URL
-            const urlParams = new URLSearchParams(window.location.search);
+
+    <svg xmlns="http://www.w3.org/2000/svg" height="100" viewBox="0 -960 960 960" width="100" style="position: absolute; top: 25%; left: 50%; transform: translate(-50%, -50%); fill: #59DE1A;"><path d="M286.154-97.694q-29.153 0-49.576-20.422-20.423-20.423-20.423-49.577 0-29.153 20.423-49.576 20.423-20.423 49.576-20.423 29.154 0 49.577 20.423t20.423 49.576q0 29.154-20.423 49.577-20.423 20.422-49.577 20.422Zm387.692 0q-29.154 0-49.577-20.422-20.423-20.423-20.423-49.577 0-29.153 20.423-49.576 20.423-20.423 49.577-20.423 29.153 0 49.576 20.423 20.423 20.423 20.423 49.576 0 29.154-20.423 49.577-20.423 20.422-49.576 20.422ZM240.615-730 342-517.692h272.692q3.462 0 6.154-1.731 2.693-1.731 4.616-4.808l107.307-195q2.308-4.231.385-7.5-1.923-3.27-6.539-3.27h-486Zm-28.769-59.998h555.383q24.538 0 37.115 20.884 12.577 20.885 1.192 42.654L677.384-494.309q-9.847 17.308-26.039 26.962-16.192 9.653-35.499 9.653H324l-46.308 84.616q-3.077 4.616-.192 10.001t8.654 5.385h457.691v59.998H286.154q-39.999 0-60.115-34.499-20.115-34.5-1.423-68.884l57.078-102.616-145.539-306.308H60.001v-59.998h113.845l38 80ZM342-517.692h280-280Z"/></svg>
     
-            // Get the form values from the query parameters
-            const domeeniName = urlParams.get('domeeniNama');
-            const selectDomain = urlParams.get('tld');
-            
-            
-    
-            // Set the form values in the HTML
-            document.getElementById('formValues').innerHTML = `
-                <p><b>Tellitud domeen:</b>  ${domeeniName}</strong></p>
-                
-                
-            `;
-        </script>
-       
+    <form action="./index.html">
+        <div class="container position-absolute float-sm-end" style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <p class="text-center fs-4">Aitäh, et te kasutasite meie domeeni teenus! <br>Teie tellimus on vormistatud ja arve <br>saadetud <strong>info@androidou.ee</strong> maili peale.</p>
+        </div>
+        
+        
+        
+        <button class="submitButtonIndex float-sm-end" type="submit" >Kinnita</button>
     </form>
-    
 
-    <a href="./form.html" class="backButton">Tagasi</a>
-    <button class="submitButtonBussinesForm" type="submit" form="detailsForm" accesskey="detailsForm" >Kinnita</button>
-
-
+   
 </body>
 </html>

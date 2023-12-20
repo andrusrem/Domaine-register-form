@@ -11,10 +11,10 @@ body
 }
 
 
+
 /* Styles for desktop screens */
 @media screen and (min-width: 992px) {
   /* CSS styles for desktop screens go here */
-
   .detailsForm
   {
     font-size: 27px;
