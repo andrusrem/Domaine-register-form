@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,25 +8,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
-    <svg xmlns='http://www.w3.org/2000/svg'  class="background">
-        <circle cx="8%" cy="15%" r="30%" stroke="rgba(89, 222, 26, 0.35)" style="fill:#EBF1F1; stroke-width: 1%;" >
+    <svg xmlns='http://www.w3.org/2000/svg' class="background">
+        <circle cx="8%" cy="15%" r="30%" stroke="rgba(89, 222, 26, 0.35)" style="fill:#EBF1F1; stroke-width: 1%;">
         </circle>
-        <circle cx="7%" cy="15%" r="28%" stroke="rgba(89, 222, 26, 0.45)" style="fill:#EBF1F1; stroke-width: 1%;" >
+        <circle cx="7%" cy="15%" r="28%" stroke="rgba(89, 222, 26, 0.45)" style="fill:#EBF1F1; stroke-width: 1%;">
         </circle>
-        <circle cx="6%" cy="15%" r="26%" stroke="rgba(89, 222, 26, 0.55)" style="fill:#EBF1F1; stroke-width: 1%;" >
+        <circle cx="6%" cy="15%" r="26%" stroke="rgba(89, 222, 26, 0.55)" style="fill:#EBF1F1; stroke-width: 1%;">
         </circle>
-        <circle cx="5%" cy="15%" r="24%" stroke="rgba(89, 222, 26, 0.65)" style="fill:#EBF1F1; stroke-width: 1%;" >
+        <circle cx="5%" cy="15%" r="24%" stroke="rgba(89, 222, 26, 0.65)" style="fill:#EBF1F1; stroke-width: 1%;">
         </circle>
-        <circle cx="93%" cy="91%" r="30%" stroke="rgba(89, 222, 26, 0.35)" style="fill:#EBF1F1; stroke-width: 1%;" >
+        <circle cx="93%" cy="91%" r="30%" stroke="rgba(89, 222, 26, 0.35)" style="fill:#EBF1F1; stroke-width: 1%;">
         </circle>
-        <circle cx="94%" cy="92%" r="28%" stroke="rgba(89, 222, 26, 0.45)" style="fill:#EBF1F1; stroke-width: 1%;" >
+        <circle cx="94%" cy="92%" r="28%" stroke="rgba(89, 222, 26, 0.45)" style="fill:#EBF1F1; stroke-width: 1%;">
         </circle>
-        <circle cx="95%" cy="93%" r="26%" stroke="rgba(89, 222, 26, 0.55)" style="fill:#EBF1F1; stroke-width: 1%;" >
+        <circle cx="95%" cy="93%" r="26%" stroke="rgba(89, 222, 26, 0.55)" style="fill:#EBF1F1; stroke-width: 1%;">
         </circle>
-        <circle cx="96%" cy="94%" r="24%" stroke="rgba(89, 222, 26, 0.65)" style="fill:#EBF1F1; stroke-width: 1%;" >
+        <circle cx="96%" cy="94%" r="24%" stroke="rgba(89, 222, 26, 0.65)" style="fill:#EBF1F1; stroke-width: 1%;">
         </circle>
     </svg>
 </head>
+
 <body>
     <div class="container" id="navigationDiv">
         <div class="position-relative ">
@@ -33,42 +35,42 @@
                 aria-valuemax="100" style="height: 2px;">
                 <div class="progress-bar bg-success" style="width: 50%;"></div>
             </div>
-            <button type="button"
-                class="position-absolute top-0 start-0 translate-middle btn btn-sm rounded-pill" id="navigationBar">
+            <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm rounded-pill"
+                id="navigationBar">
                 <a class="text-decoration-none text-reset" href="./index.html">1</a></button>
-            <button type="button"
-                class="position-absolute top-0 start-50 translate-middle btn btn-sm rounded-pill" id="navigationBar"><a class="text-decoration-none text-reset" href="./bussinesform.html">2</a></button>
-            <button type="button"
-                class="position-absolute top-0 start-100 translate-middle btn btn-sm rounded-pill" id="navigationBar" style="border-color: black;">3</button>
+            <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm rounded-pill"
+                id="navigationBar"><a class="text-decoration-none text-reset" href="./bussinesform.html">2</a></button>
+            <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm rounded-pill"
+                id="navigationBar" style="border-color: black;">3</button>
         </div>
     </div>
 
-    
 
-    <form class="detailsForm row g-3" action="./detailsSubmit.html" id="detailsForm">
+
+    <form class="detailsForm row g-3 w-auto" action="./detailsSubmit.html" id="detailsForm">
         <div class="col-md-6">
             <label for="inputEmail4" class="form-label">Ettevõtte Email</label>
-            <input type="email" class="form-control" id="inputEmail4">
+            <input type="email" class="form-control" id="inputEmail4" name="ettevotte email">
         </div>
         <div class="col-md-6">
             <label for="inputPassword4" class="form-label">Ettevõtte Nimi</label>
-            <input type="Text" class="form-control" id="input-group">
+            <input type="Text" class="form-control" id="input-group" name="ettevotte nimi">
         </div>
         <div class="col-md-6">
             <label for="inputAddress" class="form-label">Address</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="Tänav">
+            <input type="text" class="form-control" id="inputAddress" placeholder="Tänav" name="aadress">
         </div>
         <div class="col-md-6">
             <label for="inputAddress2" class="form-label">Address 2</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Korter">
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Korter" name="aaddress2">
         </div>
         <div class="col-md-4">
             <label for="inputCity" class="form-label">Linn</label>
-            <input type="text" class="form-control" id="inputCity">
+            <input type="text" class="form-control" id="inputCity" name="linn">
         </div>
         <div class="col-md-4">
             <label for="inputState" class="form-label">Maakond</label>
-            <select id="inputState" class="form-select">
+            <select id="inputState" class="form-select" name="maakond">
                 <option selected>Choose...</option>
                 <option>Harjumaa</option>
                 <option>Tartumaa</option>
@@ -88,20 +90,26 @@
         </div>
         <div class="col-md-4">
             <label for="inputZip" class="form-label">Postkood</label>
-            <input type="text" class="form-control" id="inputZip">
+            <input type="text" class="form-control" id="inputZip" name="zipkode">
         </div>
         <div id="formValues" class=""></div>
-    
+
         <script>
             // Get the query parameters from the URL
             const urlParams = new URLSearchParams(window.location.search);
-    
+            let previous = JSON.parse(localStorage.getItem("domain-by-form") || "{}")
+            for(const [key, value] of urlParams.entries()){
+                previous[key] = value
+            }
+
+            localStorage.setItem("domain-by-form", JSON.stringify(previous))
+
             // Get the form values from the query parameters
             const domeeniName = urlParams.get('domeeniNama');
             const selectDomain = urlParams.get('tld');
-            
-            
-    
+
+
+
             // Set the form values in the HTML
             document.getElementById('formValues').innerHTML = `
                 <p><b>Tellitud domeen:</b>  ${domeeniName}</strong></p>
@@ -109,11 +117,13 @@
                 
             `;
         </script>
+        <button class="submitButtonBussinesForm" type="submit" form="detailsForm" accesskey="detailsForm">EDASI</button>
     </form>
 
-    <a href="./form.html" class="backButton">Tagasi</a>
-    <button class="submitButtonBussinesForm" type="submit"  form="detailsForm" accesskey="detailsForm">EDASI</button>
+    <a href="./form.html" class="backBussinesButton">Tagasi</a>
+    
 
 
 </body>
+
 </html>

@@ -1,12 +1,15 @@
-.background
-{
-  background-color: #EBF1F1; 
-  width: 100%; 
-  height: 100%; 
+.background {
+  background-color: #EBF1F1;
+  width: 100%;
+  height: 100%;
   position: absolute;
+
 }
-body
-{
+
+body {
+  background-image: url(background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
 }
 
@@ -14,9 +17,9 @@ body
 
 /* Styles for desktop screens */
 @media screen and (min-width: 992px) {
+
   /* CSS styles for desktop screens go here */
-  .detailsForm
-  {
+  .detailsForm {
     font-size: 27px;
     width: 40%;
     position: absolute;
@@ -24,8 +27,8 @@ body
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  #formValues
-  {
+
+  #formValues {
     font-size: 27px;
     width: 100%;
     padding: 1%;
@@ -38,103 +41,122 @@ body
     top: 100%;
     left: 0%;
   }
-  .domeeniNimi
-  {
-    margin-left: 5%; 
-    margin-top: 1vh; 
-    margin-bottom: 1vh; 
-    border-radius: 10px; 
-    background-color: #F7F7F7; 
-    height: 4vh; 
+
+  .domeeniNimi {
+    margin-left: 5%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    border-radius: 10px;
+    background-color: #F7F7F7;
+    height: 4vh;
     width: 25%;
     font-size: 17px;
   }
-  .selectDomain
-  {
-    margin-left: 5%; 
-    border-width: 2px; 
-    margin-bottom: 1vh;  
-    border-radius: 10px; 
-    width:25%; 
-    height: 4vh; 
+
+  .selectDomain {
+    margin-left: 5%;
+    border-width: 2px;
+    margin-bottom: 1vh;
+    border-radius: 10px;
+    width: 25%;
+    height: 4vh;
     background-color: #F7F7F7;
     font-size: 17px;
   }
-  .checkInput
-  {
-    border-radius: 10px; 
+
+  .checkInput {
+    border-radius: 10px;
     margin-left: 5%;
-    flex: right; 
-    width: 20%; 
-    margin-bottom: 1vh; 
+    flex: right;
+    width: 20%;
+    margin-bottom: 1vh;
     background-color: #59DE1A;
     font-size: 17px;
   }
-  #domeeniConteiner
-  {
+
+  #domeeniConteiner {
     margin-top: 15%;
-    background-color: #F7F7F7; 
-    border: 3px solid black; 
-    width:90%; 
-    height: auto; 
+    background-color: #F7F7F7;
+    border: 3px solid black;
+    width: 90%;
+    height: auto;
     border-radius: 10px;
     font-size: 17px;
   }
-  #navigationBar
-  {
+
+  #navigationBar {
     width: 4rem;
-    height:4rem;
+    height: 4rem;
     font-size: 33px;
-    background-color: #EBF1F1; 
-    border:2px solid #59DE1A; 
+    background-color: #EBF1F1;
+    border: 2px solid #59DE1A;
     text-align: center;
   }
-  #navigationDiv
-  {
+
+  #navigationDiv {
     padding-top: 5%;
     width: 35%;
   }
-  .submitButtonIndex
-  {
+
+  .submitButtonIndex {
     border-radius: 10px;
     background-color: #59DE1A;
     font-size: 34px;
     width: 150px;
     height: 75px;
-    position: absolute; 
-    left: 50%; 
+    position: absolute;
+    left: 50%;
     top: 80%;
     transform: translate(-50%, -50%);
   }
-  .submitButtonForm
-  {
+
+  .submitButtonForm {
     border-radius: 10px;
     background-color: #59DE1A;
     font-size: 34px;
     width: 150px;
     height: 75px;
-    position: absolute; 
-    left: 70%; 
+    position: absolute;
+    left: 70%;
     top: 120%;
     transform: translate(-50%, -50%);
   }
-  .submitButtonBussinesForm
+
+  .submitButtonBussinesForm {
+    border-radius: 10px;
+    background-color: #59DE1A;
+    font-size: 34px;
+    width: 150px;
+    height: 75px;
+    position: absolute;
+    left: 75%;
+    top: 145%;
+    transform: translate(-50%, -50%);
+  }
+  .submitButtonSibmitForm
   {
     border-radius: 10px;
     background-color: #59DE1A;
     font-size: 34px;
     width: 150px;
     height: 75px;
-    position: absolute; 
-    left: 60%; 
+    position: absolute;
+    left: 55%;
     top: 80%;
     transform: translate(-50%, -50%);
   }
-  .backButton
-  {
+
+  .backButton {
     position: absolute;
     top: 77%;
     left: 38%;
+    width: auto;
+    font-size: 34px;
+  }
+  .backBussinesButton {
+    position: absolute;
+    top: 76%;
+    left: 28%;
     width: auto;
     font-size: 34px;
   }
@@ -142,90 +164,144 @@ body
 
 /* Styles for tablet screens */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+
   /* CSS styles for tablet screens go here */
-  .domeeniNimi
-  {
-    margin-left: 5%; 
-    margin-top: 1vh; 
-    margin-bottom: 1vh; 
-    border-radius: 10px; 
-    background-color: #F7F7F7; 
-    height: 4vh; 
-    width: auto;
+  .detailsForm {
+    font-size: 27px;
+    width: 40%;
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
-  .selectDomain
-  {
-    margin-left: 5%; 
-    border-width: 2px; 
-    margin-bottom: 1vh;  
-    border-radius: 10px; 
-    width:25%; 
-    height: 4vh; 
-    background-color: #F7F7F7;
-  }
-  .checkInput
-  {
-    border-radius: 10px; 
-    margin-left: 5%;
-    flex: right; 
-    width: 17%; 
-    margin-bottom: 1vh; 
-    background-color: #59DE1A;
-  }
-  #domeeniConteiner
-  {
-    margin-top: 25%;
-    background-color: #F7F7F7; 
-    border: 3px solid black; 
-    width:90%; 
+
+  #formValues {
+    font-size: 27px;
+    width: 100%;
+    padding: 1%;
     height: auto;
     border-radius: 10px;
-  
+    background-color: #DFF1D7;
+    border: 2px solid black;
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    left: 0%;
   }
-  #navigationBar
-  {
+
+  .domeeniNimi {
+    margin-left: 5%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    border-radius: 10px;
+    background-color: #F7F7F7;
+    height: 4vh;
+    width: auto;
+  }
+
+  .selectDomain {
+    margin-left: 5%;
+    border-width: 2px;
+    margin-bottom: 1vh;
+    border-radius: 10px;
+    width: 25%;
+    height: 4vh;
+    background-color: #F7F7F7;
+  }
+
+  .checkInput {
+    border-radius: 10px;
+    margin-left: 5%;
+    flex: right;
+    width: 17%;
+    margin-bottom: 1vh;
+    background-color: #59DE1A;
+  }
+
+  #domeeniConteiner {
+    margin-top: 25%;
+    background-color: #F7F7F7;
+    border: 3px solid black;
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+
+  }
+
+  #navigationBar {
     width: 3rem;
-    height:3rem;
-    font-size: 24px; 
-    background-color: #EBF1F1; 
-    border:2px solid #59DE1A; 
+    height: 3rem;
+    font-size: 24px;
+    background-color: #EBF1F1;
+    border: 2px solid #59DE1A;
     text-align: center;
   }
-  #navigationDiv
-  {
+
+  #navigationDiv {
     padding-top: 5%;
     width: 35%;
   }
-  .submitButtonIndex
-  {
+
+  .submitButtonIndex {
     border-radius: 10px;
     background-color: #59DE1A;
     font-size: 27px;
     width: 100px;
     height: 50px;
-    position: absolute; 
-    left: 50%; 
+    position: absolute;
+    left: 50%;
     top: 60%;
     transform: translate(-50%, -50%);
 
   }
-  .submitButtonForm
-  {
+
+  .submitButtonForm {
     border-radius: 10px;
     background-color: #59DE1A;
     font-size: 27px;
     width: 100px;
     height: 50px;
-    position: absolute; 
-    left: 60%; 
-    top: 80%;
+    position: absolute;
+    left: 70%;
+    top: 120%;
     transform: translate(-50%, -50%);
   }
-  .backButton
-  {
+
+  .submitButtonBussinesForm {
+    border-radius: 10px;
+    background-color: #59DE1A;
+    font-size: 34px;
+    width: 150px;
+    height: 75px;
     position: absolute;
-    top: 78%;
+    left: 70%;
+    top: 150%;
+    transform: translate(-50%, -50%);
+  }
+  .submitButtonSibmitForm
+  {
+    border-radius: 10px;
+    background-color: #59DE1A;
+    font-size: 34px;
+    width: 150px;
+    height: 75px;
+    position: absolute;
+    left: 60%;
+    top: 82%;
+    transform: translate(-50%, -50%);
+  }
+
+  .backButton {
+    position: absolute;
+    top: 80%;
     left: 38%;
+    width: auto;
+    font-size: 27px;
+  }
+  .backBussinesButton {
+    position: absolute;
+    top: 80%;
+    left: 28%;
     width: auto;
     font-size: 27px;
   }
@@ -233,92 +309,156 @@ body
 
 /* Styles for mobile screens */
 @media screen and (max-width: 767px) {
+
   /* CSS styles for mobile screens go here */
-  .domeeniNimi
-  {
-    margin-left: 5%; 
-    margin-top: 1vh; 
-    margin-bottom: 1vh; 
-    border-radius: 10px; 
-    background-color: #F7F7F7; 
-    height: 4vh; 
+  .detailsForm {
+
+    font-size: 17px;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #formValues {
+    font-size: 27px;
+    width: 100%;
+    padding: 1%;
+    height: auto;
+    border-radius: 10px;
+    background-color: #DFF1D7;
+    border: 2px solid black;
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    left: 0%;
+  }
+
+  .domeeniNimi {
+    margin-left: 5%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    border-radius: 10px;
+    background-color: #F7F7F7;
+    height: 4vh;
     width: 35%;
     font-size: 12px;
   }
-  .selectDomain
-  {
-    margin-left: 5%; 
-    border-width: 2px; 
-    margin-bottom: 1vh;  
-    border-radius: 10px; 
-    width:25%; 
-    height: 4vh; 
+
+  .selectDomain {
+    margin-left: 5%;
+    border-width: 2px;
+    margin-bottom: 1vh;
+    border-radius: 10px;
+    width: 25%;
+    height: 4vh;
     background-color: #F7F7F7;
     font-size: 12px;
   }
-  .checkInput
-  {
-    border-radius: 10px; 
+
+  .checkInput {
+    border-radius: 10px;
     margin-left: 35%;
-    flex: right; 
-    width: 30%; 
-    margin-bottom: 1vh; 
+    flex: right;
+    width: 30%;
+    margin-bottom: 1vh;
     background-color: #59DE1A;
     font-size: 12px;
   }
-  #domeeniConteiner
-  {
+
+  #domeeniConteiner {
     margin-top: 30%;
-    background-color: #F7F7F7; 
-    border: 3px solid black; 
-    width:90%; 
-    height: auto; 
+    background-color: #F7F7F7;
+    border: 3px solid black;
+    width: 90%;
+    height: auto;
     border-radius: 10px;
   }
-  #navigationBar
-  {
-    
+
+  #navigationBar {
+
     width: 2rem;
-    height:2rem;
-    background-color: #EBF1F1; 
-    border:2px solid #59DE1A; 
+    height: 2rem;
+    background-color: #EBF1F1;
+    border: 2px solid #59DE1A;
     text-align: center;
   }
-  #navigationDiv
-  {
+
+  #navigationDiv {
     padding-top: 10%;
     width: 40%;
   }
-  .submitButtonIndex
-  {
+
+  .submitButtonIndex {
     border-radius: 10px;
     background-color: #59DE1A;
     font-size: 22px;
     width: 100px;
     height: 50px;
-    position: absolute; 
-    top: 60%; 
-    left: 50%; 
-    transform: translate(-50%, -50%);
-  }
-  .submitButtonForm
-  {
-    border-radius: 10px;
-    background-color: #59DE1A;
-    font-size: 22px;
-    width: 100px;
-    height: 50px;
-    position: absolute; 
-    left: 65%; 
-    top: 80%;
-    transform: translate(-50%, -50%);
-  }
-  .backButton
-  {
     position: absolute;
-    top: 78%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .submitButtonForm {
+    border-radius: 10px;
+    background-color: #59DE1A;
+    font-size: 22px;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: 65%;
+    top: 105%;
+    transform: translate(-50%, -50%);
+  }
+
+  .submitButtonBussinesForm {
+    border-radius: 10px;
+    background-color: #59DE1A;
+    font-size: 17px;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: 70%;
+    top: 125%;
+    transform: translate(-50%, -50%);
+  }
+  .submitButtonSibmitForm
+  {
+    border-radius: 10px;
+    background-color: #59DE1A;
+    font-size: 24px;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: 60%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+  }
+
+  .backButton {
+    position: absolute;
+    top: 90%;
     left: 25%;
     width: auto;
     font-size: 22px;
+  }
+  .backBussinesButton {
+    position: absolute;
+    top: 105%;
+    left: 28%;
+    width: auto;
+    font-size: 17px;
+  }
+
+  .background {
+    background-color: #EBF1F1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    height: 115vh;
+
   }
 }

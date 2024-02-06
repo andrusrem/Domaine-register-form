@@ -44,13 +44,20 @@
         </div>
     </div>
 
-    <form class="detailsForm row g-3" action="./bussinesform.html" id="detailsForm">
+    <form class="detailsForm row g-3 w-auto" action="./bussinesform.html" id="detailsForm">
         
         <div id="formValues" hidden></div>
     
         <script>
         // Get the query parameters from the URL
         const urlParams = new URLSearchParams(window.location.search);
+        let previous = JSON.parse(localStorage.getItem("domain-by-form") || "{}") 
+        for(const [key, value] of urlParams.entries()){
+                previous[key] = value
+            }
+
+        localStorage.setItem("domain-by-form", JSON.stringify(previous))
+        
 
         // Get the form values from the query parameters
         const domeeniName = urlParams.get('domeeniNimi');
@@ -65,34 +72,34 @@
         </script>
 
         <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Eesnimi</label>
-            <input type="text" class="form-control" aria-label="First name">
+            <label for="inputEmail4" class="form-label" >Eesnimi</label>
+            <input type="text" class="form-control" aria-label="First name" name="eesnimi">
         </div>
         <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Perekonnanimi</label>
-            <input type="text" class="form-control" aria-label="Last name">
+            <label for="inputEmail4" class="form-label" >Perekonnanimi</label>
+            <input type="text" class="form-control" aria-label="Last name" name="perekonnanimi">
         </div>
         <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="inputEmail4">
+            <label for="inputEmail4" class="form-label" name="email">E-mail</label>
+            <input type="email" class="form-control" id="inputEmail4" name="email">
         </div>
         <div class="col-md-6">
             <label for="autoSizingInputGroup">Telefoninumber</label>
             <div class="input-group" style="padding-top: 3%;">
               <div class="input-group-text">+ 372</div>
-              <input type="phone" class="form-control" id="autoSizingInputGroup" >
+              <input type="phone" class="form-control" id="autoSizingInputGroup" name="telefoninumber">
             </div>
         </div>
         <div class="col-md-6">
             <label for="inputPassword4" class="form-label">Parool</label>
-            <input type="password" class="form-control" id="showPSWD1">
+            <input type="password" class="form-control" id="showPSWD1" name="password">
         </div>
         <div class="col-md-6">
             <label for="inputPassword4" class="form-label">Kontrolli Parool</label>
             <input type="password" class="form-control" id="showPSWD2">
         </div>
         <div class="d-flex justify-content-center">
-            <input type="button" class="btn btn-secondary w-25" onclick="generatePSWD()" value="Genereeri Parool"></input>
+            <input type="button" class="btn btn-secondary w-auto" onclick="generatePSWD()" value="Genereeri Parool"></input>
         </div>
         
        
